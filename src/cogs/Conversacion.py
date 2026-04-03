@@ -2,7 +2,7 @@ import random
 import discord
 from discord.ext import commands
 
-class Doctor(commands.Cog):
+class Conversacion(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.messages = [
@@ -21,4 +21,4 @@ class Doctor(commands.Cog):
         await ctx.send(response)
     
 async def setup(bot): #esta función es la que busca el hook.
-    await bot.add_cog(Doctor(bot)) #Add_cog es un método de discord.py.
+    await bot.add_cog(Conversacion(bot)) #Add_cog es un método de discord.py.
