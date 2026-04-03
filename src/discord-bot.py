@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     #mensaje de OK para nuesstra consola
-    print(f'{bot.user} se ha conectado al servidor!')
+    print(f'{bot.user} se ha conectado al servidor.')
 
 @bot.command()
 async def pika(ctx):
@@ -23,7 +23,8 @@ async def pika(ctx):
         "Pika pika!",
         "Pikaaachuuuuuuuuu!",
         "Pinga!",
-        ":3"
+        ":3",
+        "pikashé."
     ]
     await ctx.send(random.choice(messages))
 
