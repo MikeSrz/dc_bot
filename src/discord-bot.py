@@ -21,8 +21,8 @@ async def on_ready():
 async def pika(ctx):
     messages = [
         "Pika pika!",
-        "Pikaaachuuuuuuuuu!"
-        "¡Pinga!",
+        "Pikaaachuuuuuuuuu!",
+        "Pinga!",
         ":3"
     ]
     await ctx.send(random.choice(messages))
