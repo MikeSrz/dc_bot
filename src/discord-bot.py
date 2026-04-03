@@ -9,7 +9,7 @@ TOKEN = os.getenv('TOKEN_DISCORD')
 intents = discord.Intents.default()
 intents.message_content = True
 
-#Cuando el usuario ponga !ping se llamará a ping()
+#Cuando el usuario ponga !miau se llamará a miau()
 bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
@@ -18,7 +18,7 @@ async def on_ready():
     print(f'{bot.user} se ha conectado al servidor.')
 
 @bot.command()
-async def pika(ctx):
+async def doctor(ctx):
     messages = [
         "Negocios...",
         "Em si bueno... no se que decir. Bisness",
