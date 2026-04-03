@@ -24,7 +24,8 @@ async def doctor(ctx):
         "Em si bueno... no se que decir. Bisness",
         "Necesito una pausa para el café.",
         ":3",
-        "Lo vemos y te digo...",
+        "El café es como un abrazo cálido en una taza.",
+        "Lo consultaré con mi mujer...",
         "miau cof cof.. cof...  Llevando datos a decisiones inteligentes como buen miau-doctor en ciencia minina.",
     ]
     await ctx.send(random.choice(messages))
