@@ -20,11 +20,12 @@ async def on_ready():
 @bot.command()
 async def pika(ctx):
     messages = [
-        "Pika pika!",
-        "Pikaaachuuuuuuuuu!",
-        "Pinga!",
+        "Negocios...",
+        "Em si bueno... no se que decir. Bisness",
+        "Necesito una pausa para el café.",
         ":3",
-        "pikashé."
+        "Lo vemos y te digo...",
+        "miau cof cof.. cof...  Llevando datos a decisiones inteligentes como buen miau-doctor en ciencia minina.",
     ]
     await ctx.send(random.choice(messages))
 
