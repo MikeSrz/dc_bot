@@ -1,0 +1,11 @@
+services:
+  discord-bot:
+    build: .
+    container_name: discord_bot_local
+    env_file:
+      - .env
+    logging: #Para gestionar los logs y evitar que se almacenen demasiados
+      driver: "json-file"
+      options:
+        max-size: "10m"   # Cuando el archivo llegue a 10MB, Docker lo comprime y crea uno nuevo.
+        max-file: "3"     # Solo guardará los últimos 3 archivos (máximo 30MB en total).
