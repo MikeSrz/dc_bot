@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./src .
 
-CMD ["python", "discord-bot.py"]
+CMD ["python", "main.py"]
