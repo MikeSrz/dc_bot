@@ -1,5 +1,6 @@
 import datetime
 from zoneinfo import ZoneInfo
+import asyncio
 from discord.ext import commands, tasks
 class PlayPetancaController(commands.Cog):
     def __init__(self, bot):
@@ -14,7 +15,8 @@ class PlayPetancaController(commands.Cog):
             print("No he encontrado Petanca")
             return
         await canal.send("hora de jugar a la petanca!")
-        await canal.send("!petanca")
+        await asyncio.sleep(2)
+        await canal.send("!petanqueo")
 
 
 async def setup(bot): #esta función es la que busca el hook.
