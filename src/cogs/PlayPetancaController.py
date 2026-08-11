@@ -15,7 +15,7 @@ class PlayPetancaController(commands.Cog):
             "Sálganse del chat, quiero estar solo :("
         ]
 
-    @tasks.loop(time=datetime.time(hour=20, minute=20, tzinfo=ZoneInfo("Europe/Madrid")))
+    @tasks.loop(time=datetime.time(hour=20, minute=35, tzinfo=ZoneInfo("Europe/Madrid")))
     async def petanca_message(self):
         print("se ha ejecutada petanca")
         canal = self.bot.get_channel(776505761836171315) #Id del canal
