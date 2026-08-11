@@ -26,7 +26,7 @@ class PlayPetancaController(commands.Cog):
         await canal.send("hora de jugar a la petanca!")
         await asyncio.sleep(2)
         await canal.send("!petanqueo")
-        await asyncio.sleep(2)
+        await asyncio.sleep(5)
         await canal.send(message)
         
 
