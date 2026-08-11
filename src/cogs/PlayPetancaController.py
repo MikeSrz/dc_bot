@@ -1,3 +1,5 @@
+import datetime
+from discord.ext import commands, tasks
 class PlayPetancaController(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
