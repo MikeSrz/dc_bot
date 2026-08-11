@@ -5,7 +5,8 @@ from discord.ext import commands
 class ConversacionController(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.messages = [
+        self.messages = {
+            "DOCTOR": [
             "Negocios...",
             "Em si bueno... no se que decir. Bisness",
             "Necesito una pausa para el café.",
@@ -13,12 +14,24 @@ class ConversacionController(commands.Cog):
             "El café es como un abrazo cálido en una taza.",
             "Lo consultaré con mi mujer...",
             "miau cof cof.. cof...  Llevando datos a decisiones inteligentes como buen miau-doctor en ciencia minina."
-        ]
+            ],
+            "PODOLOGO":[
+                "A ver ese pie <3",
+                "Que peste wele, ma fren. Esto no lo atiendo asín."
+            ]
+        }
+        
 
     @commands.command(name='doctor')
     async def doctor_command(self, ctx):
-        response = random.choice(self.messages)
+        response = random.choice(self.messages["DOCTOR"])
         await ctx.send(response)
+
+    @commands.command(name='podologo')
+    async def podologo_command(self, ctx):
+        response = random.choice(self.messages["PODOLOGO"])
+        await ctx.send(response)
+
     
 async def setup(bot): #esta función es la que busca el hook.
     await bot.add_cog(ConversacionController(bot)) #Add_cog es un método de discord.py.
